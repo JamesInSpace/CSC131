@@ -1,0 +1,75 @@
+# Name: James R. Laurita
+# Date: 2.3.2022
+# Lab06: Branching - Turtle
+# Description: Use turtle() make shapes depending on user input.
+
+def main():
+    import turtle
+
+    littleTurt = turtle.Turtle()
+
+    userSquare = input("Would you like to see a square? (yes/no): ")
+    userSquare.lower()
+
+    if userSquare == "yes":
+        littleTurt.pu()
+        littleTurt.setposition(-200,200)
+        littleTurt.pd()
+
+        littleTurt.color("blue")
+        littleTurt.fillcolor("green")
+        littleTurt.begin_fill()
+
+        littleTurt.forward(100)
+        littleTurt.right(90)
+        littleTurt.forward(100)
+        littleTurt.right(90)
+        littleTurt.forward(100)
+        littleTurt.right(90)
+        littleTurt.forward(100)
+        littleTurt.right(90)
+        littleTurt.end_fill()
+    else:
+        print("Thats unfortunate!")
+
+    userCircle = input("Would you like to see a circle?(yes/no): ")
+    userCircle.lower()
+
+
+    if userCircle == "yes":
+        mood = input("What mood are you currently in?\n(tense, anxious, nervous, average, ok, calm or happy): ")
+        mood.lower()
+        circleColor = "blank"
+
+        if mood == "tense":
+            circleColor = "black"
+        elif mood == "anxious":
+            circleColor = "grey"
+        elif mood == "nervous":
+            circleColor = "gold2"
+        elif mood == "average":
+            circleColor = "green"
+        elif mood == "ok":
+            circleColor = "cyan4"
+        elif mood == "calm":
+            circleColor = "blue"
+        elif mood == "happy":
+            circleColor = "violet"
+        else:
+            circleColor = "white"
+
+        littleTurt.pu()
+        littleTurt.setposition(200, 200)
+        littleTurt.pd()
+
+        littleTurt.color("red")
+        littleTurt.fillcolor(circleColor)
+        littleTurt.begin_fill()
+
+        littleTurt.circle(120)
+        littleTurt.end_fill()
+
+    turtle.mainloop()
+
+if __name__ == "__main__":
+    main()
