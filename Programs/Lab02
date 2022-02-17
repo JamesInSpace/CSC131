@@ -1,0 +1,58 @@
+# Name: James R. Laurita
+# Class: CSC - 131
+# Date: 1.18.2022
+# Assignment: Lab2
+
+
+
+question1 = 21
+question2 = 12
+question3 = 27
+question4 = 90
+
+print("A) Convert from binary")
+print(format(question1, "b"))
+print(format(question2, "b"))
+print(format(question3, "b"))
+print(format(question4, "b"))
+
+question5 = 43
+question6 = 22
+question7 = 35
+question8 = 202
+
+print("B) Convert to Binary")
+print(format(question5, "b"))
+print(format(question6, "b"))
+print(format(question7, "b"))
+print(format(question8, "b"))
+
+print("C) Print in Octal")
+print(format(question1, "o"))
+print(format(question2, "o"))
+print(format(question3, "o"))
+print(format(question4, "o"))
+print(format(question5, "o"))
+print(format(question6, "o"))
+print(format(question7, "o"))
+print(format(question8, "o"))
+
+print("D) Print in Hex")
+print(format(question1, "x"))
+print(format(question2, "x"))
+print(format(question3, "x"))
+print(format(question4, "x"))
+print(format(question5, "x"))
+print(format(question6, "x"))
+print(format(question7, "x"))
+print(format(question8, "x"))
+
+x = -1.475
+y = -43.8
+a = -58.28
+b = 8.59
+
+print(((3*x**2) - (3*y**2)) / ((12*x) - (12*y)))
+print(((3*a*b) - (3*a**2)) / ((3*a**2) - (6*a*b) + (3*b**2)))
+print((((a-b)**2) / ((a+b)**2)) * ((a+b) / (a-b)))
+
