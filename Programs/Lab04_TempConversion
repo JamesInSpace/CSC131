@@ -1,0 +1,18 @@
+# Name: James R. Laurita
+# Date: 1.25.2022
+# Lab04: Temp Conversions
+# Description: Fahrenheit to Celsius Conversion
+
+def main():
+    print("Lets convert a tempature in Celsius to Fahrenheit! \n")
+    celsius = float(input("Please enter a tempature in Celsius:"))
+    fahrenheit = (celsius * 9/5) + 32
+    print(str(celsius) + " degrees celsius is " + str(fahrenheit) + " degrees fahrenheit! \n")
+
+    fahrenheit2 = (celsius * 9 // 5) + 32
+    print(str(celsius) + " degrees celsius using // is " + str(fahrenheit2) + " degrees fahrenheit!")
+
+    print("\nThe correct degrees would be using ")
+
+if __name__ == "__main__":
+    main()
