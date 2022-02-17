@@ -1,0 +1,27 @@
+# Name: James R. Laurita
+# Date: 2.1.2022
+# Lab06: Turtle Star
+# Description: Use turtle() to make a star.
+
+def main():
+    import turtle
+
+    star = turtle.Turtle()
+    star.forward(100)
+
+    # Finding angle of star point
+    angle = 360 * 2 / 5
+
+    star.right(angle)
+    star.forward(100)
+    star.right(angle)
+    star.forward(100)
+    star.right(angle)
+    star.forward(100)
+    star.right(angle)
+    star.forward(100)
+
+    turtle.done()
+
+if __name__ == "__main__":
+    main()
