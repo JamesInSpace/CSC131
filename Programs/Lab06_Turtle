@@ -1,0 +1,43 @@
+# Name: James R. Laurita
+# Date: 2.1.2022
+# Lab06: Two Turtles
+# Description: Practicing with two turtles.
+
+def main():
+    import turtle
+
+    turt = turtle.Turtle()
+    burt = turtle.Turtle()
+
+    turt.penup()
+    turt.goto(-200,200)
+    turt.color("blue")
+
+    turt.pd()
+    turt.begin_fill()
+
+    turt.forward(100)
+    turt.right(90)
+    turt.forward(100)
+    turt.right(90)
+    turt.forward(100)
+    turt.right(90)
+    turt.forward(100)
+
+    turt.end_fill()
+
+    burt.penup()
+    burt.goto(200,-200)
+    burt.color("red")
+
+    burt.pd()
+    burt.begin_fill()
+    burt.fillcolor("orange")
+    burt.circle(radius=120)
+    burt.end_fill()
+
+    turtle.done()
+
+if __name__ == "__main__":
+    main()
+
