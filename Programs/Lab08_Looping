@@ -1,0 +1,26 @@
+# Name: James R. Laurita
+# Date: 2.10.2022
+# Lab08: Looping
+# Description: Use Looping to create shapes with turtle.
+
+def main():
+    import turtle
+    import math
+
+    lineLength = 100
+    numberSides = 8
+
+    poly = turtle.Turtle()
+    poly.fillcolor("PeachPuff")
+    poly.begin_fill()
+
+    for x in range(numberSides):
+        poly.forward(lineLength)
+        poly.right(360 / numberSides)
+
+    poly.end_fill()
+
+    turtle.mainloop()
+
+if __name__ == "__main__":
+    main()
