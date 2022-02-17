@@ -1,0 +1,49 @@
+# Name: James R. Laurita
+# Date: 2.17.2022
+# Lab10: Nested Loops
+# Description: Using nested loops to create shapes using turtle.
+
+def main():
+
+    import turtle
+    import math
+    import random
+
+    width = 50
+
+    speedy = turtle.Turtle()
+    speedy.hideturtle()
+    speedy.speed(0)
+
+    for y in range(5 * width, 5 - width, - width):
+
+        for x in range(-3 * width, 3 * width, width):
+
+            speedy.pu()
+            speedy.goto(x,y)
+            speedy.color(random.uniform(0.0, 1.0), random.uniform(0.0, 1.0), random.uniform(0.0, 1.0))
+            speedy.pd()
+            speedy.begin_fill()
+
+            for s in range(4):
+                speedy.forward(width)
+                speedy.right(90)
+
+            speedy.end_fill()
+            speedy.pu()
+
+            speedy.goto(x + width // 4, y - width // 4)
+            speedy.color(random.uniform(0.0, 1.0), random.uniform(0.0, 1.0), random.uniform(0.0, 1.0))
+            speedy.pd()
+            speedy.begin_fill()
+
+            for s in range(4):
+                speedy.forward(width // 2)
+                speedy.right(90)
+
+            speedy.end_fill()
+
+    turtle.mainloop()
+
+if __name__ == "__main__":
+    main()
