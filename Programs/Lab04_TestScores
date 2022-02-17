@@ -1,0 +1,21 @@
+# Name: James R. Laurita
+# Date: 1.25.2022
+# Lab04: Test Scores
+# Description: Find the average of 3 test scores
+
+def main():
+    grade1 = float(input("Lets calaulate a grade average! \n"
+                         " Please enter the first grade: "))
+    print()
+    grade2 = float(input("Great!\n What is the second grade?:"))
+    print()
+    grade3 = float(input("Wonderful!\n What is the third grade?:"))
+
+    average = round((grade1 + grade2 + grade3) / 3, 2)
+
+    print()
+    print("  The average of these three grades is " + str(average))
+
+
+if __name__ == "__main__":
+    main()
