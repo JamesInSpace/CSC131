@@ -1,0 +1,50 @@
+# Name: James R. Laurita
+# Date: 2.15.2022
+# Lab09: Combining Loops 03
+# Description: Combinging Loops and Branches based off Lab09_02.
+
+def main():
+
+    import turtle
+
+    lineLength = 800
+    numberSides = 3
+
+    poly = turtle.Turtle()
+
+    poly.fillcolor()
+    if numberSides % 5 == 0:
+        poly.fillcolor("PeachPuff")
+    elif numberSides % 5 == 1:
+        poly.fillcolor("SteelBlue")
+    elif numberSides % 5 == 2:
+        poly.fillcolor("HotPink")
+    elif numberSides % 5 == 3:
+        poly.fillcolor("YellowGreen")
+    else:
+        poly.fillcolor("SaddleBrown")
+
+    poly.pensize(2)
+    poly.begin_fill()
+
+
+    for x in range(numberSides):
+        if x % 5 == 0:
+            poly.pencolor("blue")
+        elif x % 5 == 1:
+            poly.pencolor("red")
+        elif x % 5 == 2:
+            poly.pencolor("green")
+        elif x % 5 == 3:
+            poly.pencolor("purple")
+        else:
+            poly.pencolor("orange")
+        poly.forward(lineLength / numberSides)
+        poly.right(360 / numberSides)
+
+    poly.end_fill()
+
+    turtle.mainloop()
+
+if __name__ == "__main__":
+    main()
