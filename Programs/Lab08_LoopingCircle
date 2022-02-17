@@ -1,0 +1,31 @@
+# Name: James R. Laurita
+# Date: 2.10.2022
+# Lab08: Looping Circle
+# Description: Use Looping to create shapes with turtle.
+
+def main():
+    import turtle
+    import math
+
+    radius = 100
+    time = 0.0
+
+    circle = turtle.Turtle()
+    circle.pu()
+    circle.radians()
+    circle.goto(radius * math.cos(time), radius * math.sin(time))
+    circle.pd()
+    circle.fillcolor("aquamarine")
+    circle.begin_fill()
+
+    while time < 2*math.pi:
+        time += math.pi / 100
+        circle.goto(radius * math.cos(time), radius * math.sin(time))
+
+
+    circle.end_fill()
+
+    turtle.mainloop()
+
+if __name__ == "__main__":
+    main()
