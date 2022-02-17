@@ -1,0 +1,42 @@
+# Name: James R. Laurita
+# Date: 1.27.2022
+# Lab04: Years Computation
+# Description: Using division / or // and the modulo to calculate number of years, days, hours...
+
+def main():
+
+    # Years in seconds  = 365 days/year * 24 hours/day * 60 mins/hour  * 60 secs/min
+    # Days in seconds = 24 hours/day * 60 mins/hour  * 60 secs/min
+    # Hours in seconds = 60 mins/hour * 60 secs/min
+    # Minute in seconds = 60
+
+    yearSeconds = 365 * 24 * 60 * 60    # = 31536000
+    daySeconds = 24 * 60 * 60           # = 86400
+    hourSeconds = 60 * 60               # = 3600
+    seconds = 60
+
+    userSeconds = int(input("Please enter a number of seconds for conversion: "))
+
+    years = int(userSeconds // yearSeconds)         # Number of Years
+    # print(years)
+
+    yearsRemainder = userSeconds % yearSeconds
+    days = int(yearsRemainder // daySeconds)        # Number of Days
+    # print(days)
+
+    daysRemainder = yearsRemainder % daySeconds
+    hours = int(daysRemainder // hourSeconds)       # Number of Hours
+    # print(hours)
+
+    hourRemainder = daysRemainder % hourSeconds
+    minutes = int(hourRemainder // seconds)         # Number of Minutes
+    # print(seconds02)
+
+                                                    # Remaining number of Seconds
+    secondsRemaining = int(hourRemainder % seconds)
+
+    print(int(userSeconds), "seconds equals : \n", int(years) , "Years \n" , int(days) , "Days \n" , int(hours) , "Hours\n" , int(minutes) , "Minutes and\n", secondsRemaining, "Seconds.")
+
+
+if __name__ == "__main__":
+    main()
