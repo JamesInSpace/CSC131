@@ -1,0 +1,49 @@
+# Name: James R. Laurita
+# Date: 1.27.2022
+# Lab04: Compute Change
+# Description: Change Calculation from user input.
+
+def main():
+
+    # Declaration of variables for denominations
+    twenty = 2000
+    ten = 1000
+    five = 500
+    one = 100
+    quarters = 25
+    dimes = 10
+    nickles = 5
+    pennies = 1
+
+    print("Greetings! Welcome to the change calculator!")
+    itemPrice = float(input("How much does your item cost? $"))
+    print()
+
+    paid = float(input("Great! \nNow, how much did you pay? $"))
+
+    change = int((itemPrice - paid) * 100)   # Find the change and make it an integer
+
+    # Number of $20s
+    return20 = change // twenty
+    remainder20 = change % twenty
+
+    # Number of $10s
+    return10 = remainder20 // ten
+    remainder10 = remainder20 % ten
+
+    # Number of $5s
+    return5 = remainder10 // five
+    remainder5 = remainder10 % five
+
+    # Number of $1s
+
+    # Number of quarters
+
+    # Number of dimes
+
+    # Number of nickles
+
+    # Number of pennies
+
+if __name__ == "__main__":
+    main()
