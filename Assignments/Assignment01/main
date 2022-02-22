@@ -26,10 +26,40 @@ def main():
 
     # .gif name assignment and registration with the turtle window.
     for b in range(0, 13):
-        if b <= 9:
-            num = str(b)
-            name = str(num + ".gif")
+        # if b <= 9:
+            # num = str(b)
+            # name = str(num + ".gif")               # These lines work and are left for future assignments
             # print(name)                            # Print statement left for debugging
+            # win.register_shape(name)
+        if b == 0:
+            name = "0.gif"
+            win.register_shape(name)
+        elif b == 1:
+            name = "1.gif"
+            win.register_shape(name)
+        elif b == 2:
+            name = "2.gif"
+            win.register_shape(name)
+        elif b == 3:
+            name = "3.gif"
+            win.register_shape(name)
+        elif b == 4:
+            name = "4.gif"
+            win.register_shape(name)
+        elif b == 5:
+            name = "5.gif"
+            win.register_shape(name)
+        elif b == 6:
+            name = "6.gif"
+            win.register_shape(name)
+        elif b == 7:
+            name = "7.gif"
+            win.register_shape(name)
+        elif b == 8:
+            name = "8.gif"
+            win.register_shape(name)
+        elif b == 9:
+            name = "9.gif"
             win.register_shape(name)
         elif b == 10:
             name = "A.gif"
